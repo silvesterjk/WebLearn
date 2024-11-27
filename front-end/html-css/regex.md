@@ -58,3 +58,49 @@ The main differences from JavaScript:
 - Uses `re.match()` instead of `.test()`
 - Pattern syntax is similar but Python uses raw strings
 - Can be used with either `re.match()` or compiled patterns with `re.compile()`
+
+```python
+# Regex Quick Reference Cheatsheet
+
+# Basic Patterns
+. (dot)       # Any single character except newline
+\w            # Word character [a-zA-Z0-9_]
+\d            # Digit [0-9]
+\s            # Whitespace (space, tab, newline)
+\W \D \S      # NOT word, digit, whitespace
+
+# Occurrences (Quantifiers)
+*             # 0 or more (greedy)
++             # 1 or more (greedy)
+?             # 0 or 1 (optional)
+{3}           # Exactly 3
+{2,4}         # 2 to 4 occurrences
+{2,}          # 2 or more
+*?            # 0 or more (lazy)
++?            # 1 or more (lazy)
+
+# Position Anchors
+^             # Start of string
+$             # End of string
+\b            # Word boundary
+\B            # Not word boundary
+
+# Character Classes
+[abc]         # Any of a, b, or c
+[^abc]        # NOT a, b, or c
+[a-z]         # Any lowercase letter
+[A-Z]         # Any uppercase letter
+[0-9]         # Any digit
+
+# Groups and References
+(abc)         # Capture group
+(?:abc)       # Non-capturing group
+\1            # Back reference to group 1
+(?=xyz)       # Positive lookahead
+(?!xyz)       # Negative lookahead
+
+# Common Examples
+\d{3}-\d{2}-\d{4}   # SSN: 123-45-6789
+^.{8,}$             # At least 8 characters
+^[A-Z][a-z]*$       # Capitalized word
+```
