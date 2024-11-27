@@ -1,7 +1,16 @@
 
+
+```
+
+apropos -s 1,8 director
+^ This will return the commands with the word 'director' from section 1 and 8
+
 ip a --> This will populate the ip address
 
 man {command} --> Will pull up the manual pages for that comment
+
+```
+
 
 ##### If the `apropos` command does not work because your manual pages are not indexed, what command you can use to manually refresh these?
 
