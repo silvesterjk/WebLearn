@@ -3,7 +3,6 @@ ID selector
 class selector
 attribute selector
 
-
   ```css
 /* CSS Selector Cheatsheet */
 
