@@ -39,7 +39,6 @@ let items = {
     food : 'burgers'
 };
 
-
 // JavaScript is dynamically typed. Similar to Python.
 
 let item = 'Steven';
@@ -68,4 +67,22 @@ console.log(data['name']) // Called bracket notation, this method is used if we 
 
 let vorname = 'dept'; // If the key of an object is assigned to a variable --- For a later recall
 console.log( data[vorname] );
+
+// To create an access arrays -- Very similar to python
+// Thing to note is the here, an array is an object with key value pair and not a seperate datatype like 'list' in python.
+
+let fruits = ['cherry', 'bananas', 'coil'];
+console.log(fruits[2]) // To call the item in the second index of the array
+
+fruits[2] = 'apple'
+console.log(fruits[2]) // To replace the item in the second index of the array
+
+console.log(typeof fruits) // This returns 'object' as the data type
+
+console.log(fruits.length) // Length is an array property to see how many items are there in an array
+
+
+
+
+
 
