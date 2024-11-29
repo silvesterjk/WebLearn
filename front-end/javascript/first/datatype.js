@@ -54,5 +54,18 @@ console.log(typeof item);
 
 // Objects are similar to dictionaries in Python. Allowing us to group related values.
 
+let data = {
+    name: "I am Silvester",
+    dept: 2024
+}
 
+console.log(data.dept) // dot notation is similar to that of Python
+
+data.dept = 2025; // To replace the data
+console.log(data.dept)
+
+console.log(data['name']) // Called bracket notation, this method is used if we don't to which property to access until runtime
+
+let vorname = 'dept'; // If the key of an object is assigned to a variable --- For a later recall
+console.log( data[vorname] );
 
