@@ -74,4 +74,68 @@ console.log(val1 === val2); // false
 console.log(true == '1'); // true, as it converts the value to boolean, where 1 is True and anything else is False.
 
 
+// In JavaScript, the ternary operator, is a conditional operator that allows us to perform a comparison and assign values conditionally. 
+
+let age = 18;
+const canDrive = age >= 18 ? true : false;
+console.log('canDrive', canDrive);
+
+// Note: in this case you could just do 
+// const canDrive = age >= 16; 
+// but this is just to demonstrate the syntax of the ternary operator.
+
+let points = 100;
+const customerType = points > 100 ? 'pro' : 'proPlus';
+console.log('customerType', customerType);
+
+/*
+
+|| (or operator)
+&& (and operator)
+!  (not operator)
+?? (null coalesing)
+
+-- These can be applied to values of any type, not just boolean values
+-- Expressions are evaluated from left to right
+
+*/
+
+// Here out of the four possible logical combinations that can be made as long as one is true, the output will return true.
+
+console.log(false || false) // False
+console.log(false || true) // True
+console.log(false || true) // True
+console.log(true || true) //  True
+
+ // An example of the ||, or operator 
+let hasReservation = true;
+let acceptingWalkIns = false;
+const hasAccessToTable = hasReservation || acceptingWalkIns;
+
+console.log('hasAccessToTable', hasAccessToTable);
+
+// &&, the AND operator
+// This returns true if all the operands being evaluated are truthy.
+// Consider the four possible logical combinations that can be made when working with two operands.
+
+console.log(true && true); // true
+console.log(true && false); // false
+console.log(false && true); // false
+console.log(false && false); // false
+
+let myAge = 18;
+let hasCar = true;
+const iCanDrive = age >= 18 && hasCar;
+
+console.log('canDrive', canDrive);
+
+// Another example
+let A = true, B = true, C = false, D = false;
+
+console.log(A && B || C && D);
+
+// The order of operation is the same as the following:
+console.log((A && B) || (C && D));
+
+
 
