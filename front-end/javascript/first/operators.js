@@ -137,5 +137,41 @@ console.log(A && B || C && D);
 // The order of operation is the same as the following:
 console.log((A && B) || (C && D));
 
+// !, the NOT operator
+// This will return the inverse of the operand.
+console.log(!true); // false
+
+// Another example
+let isClosedOnSunday = true;
+
+const isRestaurantOpen = !isClosedOnSunday;
+
+console.log('isRestaurantOpen :', isRestaurantOpen);
 
 
+// ??, nullish coalescing operator
+// So if a value is null or undefined, then we can supply a default value.
+
+let doesValueExist = null;
+const result = doesValueExist ?? false;
+
+// ? operator is syntactic sugar for a logic such as this:
+// Where we first check if a is null or undefined, return false else return true.
+const resultOfExpression = (a !== null && a !== undefined) ? a : false;
+
+
+// The falsy values in JavaScript are: undefined, null, 0, false, '', NaN
+// anything else that doesn't fall in this category is considered truthy
+// so in the case of || (or operator)
+console.log(false || 'Dior'); // returns 'Dior'
+
+// So since 'Dior' is evaluated to truthy, it will be the value returned
+// OR operator returns the first truthy value. || performs short-circuit evaluation i.e. it stops the expression once it can evaluate to 'truthy' or 'falsy':
+console.log(false || 1 || 2); // returns 1
+
+// Another example
+let usersChosenColor = 'blue';
+let defaultColor = 'green';
+
+const currentWebsiteColor = usersChosenColor || defaultColor;
+console.log(currentWebsiteColor); // returns blue as it precedes green
