@@ -175,3 +175,5 @@ let defaultColor = 'green';
 
 const currentWebsiteColor = usersChosenColor || defaultColor;
 console.log(currentWebsiteColor); // returns blue as it precedes green
+
+// PEMDAS is used for mathematical operation
