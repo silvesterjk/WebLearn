@@ -9,9 +9,12 @@ const dog = {
     age: 5,
     weightInKilos: 15.4,
     eat: function(boop) {
-        console.log(boop * 2)
+        return boop + " " + boop;
     },
     bark() {
-        console.log("Woof!");
+        return "Woof!";
     }
 }
+
+val = dog.bark();
+console.log(val);
