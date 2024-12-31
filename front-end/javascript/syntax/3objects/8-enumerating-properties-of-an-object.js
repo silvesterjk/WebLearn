@@ -16,7 +16,6 @@ for (const key in dog)
     console.log(dog[key]);
 
 // We have another syntax for enumerating over the keys and values of an Object
-
 // This returns the keys of the object as an array
 // Such as: ['name', 'age', 'eyeColor']
 const keys = Object.keys(dog);
