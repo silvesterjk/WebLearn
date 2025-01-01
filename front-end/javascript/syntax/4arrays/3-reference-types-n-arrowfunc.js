@@ -39,4 +39,12 @@ const add = (num1, num2) => {
     return num1 + num2;
 }
 
-// const add = (num1, num2) => num1 + num2;
+
+// Cleaner version: Given that the code block can be written in the same line, we'll remove 'return'
+
+const add = (num1, num2) => num1 + num2;
+
+// Same as
+function add(num1, num2) {
+     return num1 + num2;
+}
