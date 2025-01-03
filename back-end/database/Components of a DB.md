@@ -23,6 +23,18 @@ Optimiser (to run the query in the most efficient way to finish it ASAP) -->
 	* MVCC -- Multiversion concurrency control
 		* This is one of the techniques
 
+________
+
+To handle distributed data:
+
+| Shard Manager for Sharding | 
+| Cluster Manager to manager all the shard nodes | 
+| Replication Manager to ensure availability |
+
+CAP -- Consistency vs Availability
+____
+
+
 
 | Strorage Engine | 
 * Disk storage manager
@@ -31,18 +43,9 @@ Optimiser (to run the query in the most efficient way to finish it ASAP) -->
 	* Upon updating, we can put it back.
 * Buffer Manager -- To deal with the data that is there on disk
 	* To move the entire page and to put it back
+* Indexing by Index Manager
+	* This helps the buffer manager to pick the essentials and to move things around.
+	
 
-
-
-
-
-
-
-
-
-
-
-
-Databases:
-
-SQLite -- This is an embeddable database. Does not require a network layer and there is no separate process for it.
+| OS Interaction Layer | 
+* To manage system call based on the OS we are using
