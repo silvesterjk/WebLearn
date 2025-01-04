@@ -56,3 +56,33 @@ FROM payment
 ORDER BY amount DESC
 ```
 
+To return the first 10 items in the table after sorting the first_names in the ascending order
+
+```
+SELECT first_name
+FROM actor
+ORDER BY first_name ASC
+LIMIT 10
+
+-or-
+
+SELECT * FROM rental
+ORDER BY rental_date
+LIMIT 7
+```
+
+
+To count the number of values 
+
+```
+SELECT COUNT(*)
+FROM customer
+
+SELECT COUNT(first_name)
+FROM customer
+
+SELECT COUNT(DISTINCT first_name)
+FROM customer
+
+```
+
