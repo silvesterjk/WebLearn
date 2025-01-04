@@ -14,4 +14,9 @@ Architecture:
 	* Virtual Database Engine (VDBE) or a Virtual Machine (VM) -->
 	* B/B+ Tree -->
 		* Every data is stored on Single Disk File
-	* 
+		* A file is a set of bytes put together. Chunks of 4kb maybe. 
+			* Called pages.
+	* Pager --> 
+		* Taking care of cache, lock mechanism etc.
+	* Virtual file system or OS interface
+

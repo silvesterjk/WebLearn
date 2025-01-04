@@ -23,3 +23,4 @@ numbers = [1, 3, 5, 7, 8, 9];
 // 2nd param (optional): the index of where the element is stored
 // 3rd param (optional): the original array
 const hasOneEvenNumber = numbers.some(number => number % 2 === 0);
+console.log(`hasOneEvenNumber: ${hasOneEvenNumber}`);
