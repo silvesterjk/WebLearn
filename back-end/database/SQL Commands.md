@@ -95,3 +95,22 @@ SELECT COUNT(customer_id) FROM payment WHERE customer_id = '100';
 SELECT * FROM payment WHERE customer_id = '100';
 ```
 
+
+To select values that are equal to or less than 10.99
+```
+SELECT * FROM payment WHERE amount <= 10.99
+```
+
+To select values that are equal to or more than 10.99
+```
+SELECT * FROM payment WHERE amount >= 10.99
+```
+
+To select values that are not equal to 10.99
+
+```
+SELECT * FROM payment WHERE amount <> 10.99
+-or-
+SELECT * FROM payment WHERE amount != 10.99
+```
+
