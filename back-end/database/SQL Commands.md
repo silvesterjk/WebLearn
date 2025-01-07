@@ -86,3 +86,12 @@ FROM customer
 
 ```
 
+To count the number of payments made by the customer_id 100 &
+To list all the payments made by customer_id 100
+
+```
+SELECT COUNT(customer_id) FROM payment WHERE customer_id = '100';
+
+SELECT * FROM payment WHERE customer_id = '100';
+```
+
