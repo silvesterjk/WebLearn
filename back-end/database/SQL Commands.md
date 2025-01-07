@@ -114,3 +114,12 @@ SELECT * FROM payment WHERE amount <> 10.99
 SELECT * FROM payment WHERE amount != 10.99
 ```
 
+To find all products with a price of more than 200, selecting only the product name and price, and sorting the results by price in ascending order:
+
+```
+SELECT name, price
+FROM products
+WHERE price > 200
+ORDER BY price ASC;
+```
+
