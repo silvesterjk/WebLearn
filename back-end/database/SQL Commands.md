@@ -123,3 +123,12 @@ WHERE price > 200
 ORDER BY price ASC;
 ```
 
+To find all products in the 'Electronics' category with a price greater than 200, selecting only the product name and price, and sorting the results by price in ascending order:
+
+```
+SELECT name, price
+FROM products
+WHERE category = 'Electronics' AND price > 200
+ORDER BY price ASC;
+```
+
