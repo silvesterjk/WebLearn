@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "backend/Networking.md",
+                "file": "backend-networking/Networking - OSI Model.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Networking"
+              "title": "Networking - OSI Model"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "backend/Networking.md",
+                "file": "backend-networking/Networking - OSI Model.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Networking"
+              "title": "Backlinks for Networking - OSI Model"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "backend/Networking.md",
+                "file": "backend-networking/Networking - OSI Model.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Networking"
+              "title": "Outgoing links from Networking - OSI Model"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "backend/Networking.md",
+                "file": "backend-networking/Networking - OSI Model.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Networking"
+              "title": "Outline of Networking - OSI Model"
             }
           }
         ]
@@ -171,8 +171,8 @@
   "active": "e4c73e8f31c7f1ff",
   "lastOpenFiles": [
     "backend.md",
-    "backend",
-    "backend/Networking.md",
+    "backend-networking",
+    "backend-networking/Networking - OSI Model.md",
     "sw_architecture/SOLID.md",
     "sw_architecture/Software Architecture.md",
     "sw_architecture/Object Oriented Programming.md",
