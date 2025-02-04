@@ -85,3 +85,6 @@ All these layers work together in sequence. For instance, when you send an email
 * Your network card adds MAC addressing (Layer 2)
 * The data is converted to electrical signals and transmitted (Layer 1)
 
+
+* Level 1 to 4 is public
+* 
