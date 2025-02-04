@@ -97,3 +97,7 @@ All these layers work together in sequence. For instance, when you send an email
 	* Higher availability through redundancy. 
 	
 * Common implementations use tools like NGINX or HAProxy for proxying, and services like AWS ELB or Google Cloud Load Balancing for load distribution. This architecture represents a balance between security, performance, and reliability, though specific implementations may vary based on organizational needs.
+
+* Shortcoming of OSI:
+	* It could be simpler to deal with 5/6/7 as a single layer.
+	* For some this is both vague and too many layers for the work it does. 
