@@ -86,5 +86,14 @@ All these layers work together in sequence. For instance, when you send an email
 * The data is converted to electrical signals and transmitted (Layer 1)
 
 
-* Level 1 to 4 is public
-* 
+
+* In modern network architecture, the path from client to server typically involves multiple specialised layers of infrastructure. 
+* The first point of contact is usually a proxy/firewall operating at layers 1-4 of the OSI model, handling public-facing connections and providing initial security through packet filtering, NAT, and DDoS protection. 
+* Traffic then flows to a load balancer or CDN, which acts as an intermediary endpoint and can operate at either layer 4 (transport) or layer 7 (application) -- Typically all 7. 
+* The load balancer intelligently distributes requests across multiple backend servers, which remain hidden from direct client access.
+* This layered approach offers several advantages: 
+	* Enhanced security through isolation of backend services, 
+	* Improved scalability through dynamic resource allocation, and 
+	* Higher availability through redundancy. 
+	
+* Common implementations use tools like NGINX or HAProxy for proxying, and services like AWS ELB or Google Cloud Load Balancing for load distribution. This architecture represents a balance between security, performance, and reliability, though specific implementations may vary based on organizational needs.
